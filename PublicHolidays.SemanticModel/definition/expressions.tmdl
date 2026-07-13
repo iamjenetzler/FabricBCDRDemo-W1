@@ -1,0 +1,9 @@
+expression 'DirectLake - PublicHolidays_771' =
+		let
+		    Source = AzureStorage.DataLake("https://onelake.dfs.fabric.microsoft.com/b11cf9d8-5334-46d7-9159-9145c76f3ef1/f80961b9-4a41-4d93-a12c-73cf9480d5d9", [HierarchicalNavigation=true])
+		in
+		    Source
+	lineageTag: 5754309d-87c9-4d2b-8a8c-e1c557282df4
+
+	annotation PBI_IncludeFutureArtifacts = False
+
